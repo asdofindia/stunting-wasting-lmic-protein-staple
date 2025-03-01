@@ -1,0 +1,16 @@
+Version: 1.0
+ProjectId: 7699b582-9881-4c08-9763-872e7de4c856
+
+RestoreWorkspace: No
+SaveWorkspace: No
+AlwaysSaveHistory: Default
+
+EnableCodeIndexing: Yes
+UseSpacesForTab: Yes
+NumSpacesForTab: 2
+Encoding: UTF-8
+
+RnwWeave: Sweave
+LaTeX: pdfLaTeX
+
+ProjectName: Child stunting and wasting prevalence in Low-and middle-income countries: An analysis of its linkages to protein quality in staple foods by food balances
