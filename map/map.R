@@ -322,4 +322,23 @@ wheat_map_world <- create_map(WHEAT, "wheat.png", "Wheat",
 )
 
 
+stunting_map_world <- create_map(STUNTING, "stunting.png", "Stunting",
+  data =
+    merged_df
+)
+wasting_map_world <- create_map(WASTING, "wasting.png", "Wasting",
+  data =
+    merged_df
+)
+
+ggsave(
+  "stunting_wasting_map.png",
+  plot = wrap_plots(list(stunting_map_world, wasting_map_world), ncol = 1),
+  width = 15,
+  height = 20,
+  units = "in",
+  dpi = 300,
+  bg = "white"
+)
+
 print("Maps created successfully!")
