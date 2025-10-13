@@ -14,7 +14,7 @@ The description of the files:
 If this is the first time, install R and then the dependencies as
 
 ```bash
-Rscript -e "install.packages(c('sf', 'dplyr', 'readxl', 'ggplot2', 'RColorBrewer', 'patchwork', 'cowplot', 'terra', 'ggrepel', 'rnaturalearth', 'here'), repos='https://cran.rstudio.com')"
+Rscript -e "install.packages(c('sf', 'dplyr', 'readxl', 'ggplot2', 'RColorBrewer', 'patchwork', 'cowplot', 'terra', 'ggrepel', 'rnaturalearth', 'rnaturalearthdata', 'here'), repos='https://cran.rstudio.com')"
 ```
 
 
