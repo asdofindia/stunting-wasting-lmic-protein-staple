@@ -3,18 +3,21 @@
 This is the repository of data and code accompanying the paper above.
 
 The description of the files:
-- `data/GBD JME checked cleaned final @CMC 161124.xlsx`: The main data file
-- `data/Dataset@Wast.xlsx`: A subset of the above
+- `data/GBD JME aggregate 05 Oct.xlsx`: The main data file
+- `data/05 Oct Dataset@Wast.xlsx`: A subset of the above
 - `statistics/`: The SAS code for models
-- `map/map.R`: The R code for maps
+- `map/map.R`: The R code for maps and supplement section J generation
 
+Outdated files:
+- `data/GBD JME checked cleaned final @CMC 161124.xlsx`: The main data file
+- `data/Dataset@Wast.xlsx`: A subset of the above 
 
 ## Generating maps using R
 
 If this is the first time, install R and then the dependencies as
 
 ```bash
-Rscript -e "install.packages(c('sf', 'dplyr', 'readxl', 'ggplot2', 'RColorBrewer', 'patchwork', 'cowplot', 'terra', 'ggrepel', 'rnaturalearth', 'rnaturalearthdata', 'here'), repos='https://cran.rstudio.com')"
+Rscript -e "install.packages(c('sf', 'dplyr', 'readxl', 'ggplot2', 'RColorBrewer', 'patchwork', 'cowplot', 'terra', 'ggrepel', 'rnaturalearth', 'rnaturalearthdata', 'here', 'officer', 'flextable'), repos='https://cran.rstudio.com')"
 ```
 
 
