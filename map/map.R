@@ -260,6 +260,31 @@ millet_map_africa <- create_map(
   data = africa
 )
 
+ggsave(
+  "africa_sorghum_millet_map.png",
+  plot = wrap_plots(list(create_map(
+    SORGHUM,
+    "",
+    "Sorghum",
+    NULL,
+    width = 10,
+    data = africa
+  ), create_map(
+    MILLET,
+    "",
+    "Millet",
+    NULL,
+    width = 10,
+    data = africa
+  )), ncol = 2),
+  width = 15,
+  height = 10,
+  units = "in",
+  dpi = 300,
+  bg = "white"
+)
+
+
 cassava_map_africa <- create_map(
   CASSAVA,
   "africa_cassava.png",
