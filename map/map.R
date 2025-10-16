@@ -232,9 +232,17 @@ wasting_map_africa <- create_map(WASTING,
     africa
 )
 
+stunting_map_africa_with_sahel <- stunting_map_africa +
+  geom_hline(yintercept = 10, linetype = "dotted", color = "white", linewidth = 1.0) +
+  geom_hline(yintercept = 20, linetype = "dotted", color = "white", linewidth = 1.0)
+
+wasting_map_africa_with_sahel <- wasting_map_africa +
+  geom_hline(yintercept = 10, linetype = "dotted", color = "white", linewidth = 1.0) +
+  geom_hline(yintercept = 20, linetype = "dotted", color = "white", linewidth = 1.0)
+
 ggsave(
   "africa_stunting_wasting_map.png",
-  plot = wrap_plots(list(stunting_map_africa, wasting_map_africa), ncol = 2),
+  plot = wrap_plots(list(stunting_map_africa_with_sahel, wasting_map_africa_with_sahel), ncol = 2),
   width = 15,
   height = 10,
   units = "in",
